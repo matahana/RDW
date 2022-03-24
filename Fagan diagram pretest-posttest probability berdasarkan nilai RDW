@@ -1,0 +1,65 @@
+#Instal package
+install.packages("biostatUZH", repos="http://R-Forge.R-project.org")
+
+#aktifkan library
+library(biostatUZH)
+library(survival)
+
+
+#Fagan plot untuk RDW CV 13,35
+faganPlot(prob.pre.init = c(0.1, 0.2, 0.5, 1, 2, 5, 10, 
+                            20, 23, 30, 40, 50, 70, 85), 
+          text = 0.8, language = c("english", "english")[1], 
+          tit = "Nomogram Fagan untuk RDW CV 13,35")
+faganLine(prob.pre = 0.2329, lik.ratio = c(0.5882/0.3839, 0.4118/0.6161))
+
+
+#Fagan plot untuk RDW CV 14,5
+faganPlot(prob.pre.init = c(0.1, 0.2, 0.5, 1, 2, 5, 10, 
+                            20, 23, 30, 40, 50, 70, 85), 
+          text = 0.8, language = c("english", "english")[1], 
+          tit = "Nomogram Fagan untuk RDW CV 14,5")
+faganLine(prob.pre = 0.2329, lik.ratio = c(0.3235/0.1696, 0.6765/0.8304))
+
+
+#Fagan plot untuk RDW CV-NLR 107
+faganPlot(prob.pre.init = c(0.1, 0.2, 0.5, 1, 2, 5, 10, 
+                            20, 23, 30, 40, 50, 70, 85), 
+          text = 0.8, language = c("english", "english")[1], 
+          tit = "Nomogram Fagan untuk RDW-NLR 107")
+faganLine(prob.pre = 0.2329, lik.ratio = c(0.7941/0.1518, 0.2059/0.8482))
+
+
+
+#Fagan plot untuk RDW CV-Neut 11,53
+faganPlot(prob.pre.init = c(0.1, 0.2, 0.5, 1, 2, 5, 10, 
+                            20, 23, 30, 40, 50, 70, 85), 
+          text = 0.8, language = c("english", "english")[1], 
+          tit = "Nomogram Fagan untuk RDW-Neut 11.53")
+faganLine(prob.pre = 0.2329, lik.ratio = c(0.7647/0.2232, 0.2353/0.7768))
+
+
+
+
+#Fagan plot untuk RDW CV-Lim 45
+faganPlot(prob.pre.init = c(0.1, 0.2, 0.5, 1, 2, 5, 10, 
+                            20, 23, 30, 40, 50, 70, 85), 
+          text = 0.8, language = c("english", "english")[1], 
+          tit = "Nomogram Fagan untuk RDW-Lim 45")
+faganLine(prob.pre = 0.2329, lik.ratio = c(0.58/0.0521, 0.42/0.9479))
+
+
+
+
+
+
+faganLine(prob.pre, lik.ratio = c(0.2329, c(0.5882/0.3839, 0.4118/0.6161)))
+
+# empty Fagan plot
+faganPlot()
+
+# Fagan lines
+faganLine(prob.pre = 0.2329, lik.ratio = c(0.5882/0.3839, 0.4118/0.6161))
+
+
+faganLine(prob.pre = 0.2329, lik.ratio = c(0.3235/0.1696, 0.6765/0.8304))
