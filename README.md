@@ -8,7 +8,9 @@
 
 # Nomogram
 - Membuat nomogram probabilitas resiko berdasarkan variabel prediktor
+- Nomogram dengan metode analisa regresi logistik
 
 
 # Fagan diagram
 - Menilai Post test probability (PPV) berdasarkan nilai prevalensi (pre test probability) dengan menggunakan Fagan Diagram 
+- Memahami pretest probability, sensitifitas, spesifisitas, LR+, LR-, PPV dan NPV dengan Fagan diagram
